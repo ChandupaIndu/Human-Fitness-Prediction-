@@ -1,0 +1,508 @@
+|--- activity_index <= 0.43
+|   |--- encoded_smokes <= 0.50
+|   |   |--- nutrition_quality <= 0.72
+|   |   |   |--- BMI <= 0.46
+|   |   |   |   |--- encoded_gender <= 0.50
+|   |   |   |   |   |--- blood_pressure <= 0.33
+|   |   |   |   |   |   |--- nutrition_quality <= 0.34
+|   |   |   |   |   |   |   |--- BMI <= 0.41
+|   |   |   |   |   |   |   |   |--- age <= 0.29
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- age >  0.29
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- BMI >  0.41
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- nutrition_quality >  0.34
+|   |   |   |   |   |   |   |--- blood_pressure <= 0.18
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- blood_pressure >  0.18
+|   |   |   |   |   |   |   |   |--- BMI <= 0.32
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- BMI >  0.32
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- blood_pressure >  0.33
+|   |   |   |   |   |   |--- BMI <= 0.24
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- BMI >  0.24
+|   |   |   |   |   |   |   |--- activity_index <= 0.32
+|   |   |   |   |   |   |   |   |--- BMI <= 0.43
+|   |   |   |   |   |   |   |   |   |--- nutrition_quality <= 0.14
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- nutrition_quality >  0.14
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- BMI >  0.43
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- activity_index >  0.32
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- encoded_gender >  0.50
+|   |   |   |   |   |--- sleep_hours <= 0.31
+|   |   |   |   |   |   |--- blood_pressure <= 0.56
+|   |   |   |   |   |   |   |--- BMI <= 0.23
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- BMI >  0.23
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- blood_pressure >  0.56
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- sleep_hours >  0.31
+|   |   |   |   |   |   |--- blood_pressure <= 0.70
+|   |   |   |   |   |   |   |--- activity_index <= 0.31
+|   |   |   |   |   |   |   |   |--- activity_index <= 0.23
+|   |   |   |   |   |   |   |   |   |--- blood_pressure <= 0.56
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- blood_pressure >  0.56
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- activity_index >  0.23
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- activity_index >  0.31
+|   |   |   |   |   |   |   |   |--- activity_index <= 0.36
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- activity_index >  0.36
+|   |   |   |   |   |   |   |   |   |--- BMI <= 0.34
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- BMI >  0.34
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- blood_pressure >  0.70
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |--- BMI >  0.46
+|   |   |   |   |--- activity_index <= 0.26
+|   |   |   |   |   |--- age <= 0.09
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- age >  0.09
+|   |   |   |   |   |   |--- blood_pressure <= 0.24
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- blood_pressure >  0.24
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- activity_index >  0.26
+|   |   |   |   |   |--- activity_index <= 0.28
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- activity_index >  0.28
+|   |   |   |   |   |   |--- BMI <= 0.62
+|   |   |   |   |   |   |   |--- activity_index <= 0.32
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- activity_index >  0.32
+|   |   |   |   |   |   |   |   |--- activity_index <= 0.39
+|   |   |   |   |   |   |   |   |   |--- sleep_hours <= 0.51
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- sleep_hours >  0.51
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- activity_index >  0.39
+|   |   |   |   |   |   |   |   |   |--- blood_pressure <= 0.24
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- blood_pressure >  0.24
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- BMI >  0.62
+|   |   |   |   |   |   |   |--- nutrition_quality <= 0.59
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- nutrition_quality >  0.59
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |--- nutrition_quality >  0.72
+|   |   |   |--- heart_rate <= 0.60
+|   |   |   |   |--- activity_index <= 0.11
+|   |   |   |   |   |--- heart_rate <= 0.49
+|   |   |   |   |   |   |--- blood_pressure <= 0.33
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- blood_pressure >  0.33
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- heart_rate >  0.49
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- activity_index >  0.11
+|   |   |   |   |   |--- heart_rate <= 0.58
+|   |   |   |   |   |   |--- sleep_hours <= 0.21
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- sleep_hours >  0.21
+|   |   |   |   |   |   |   |--- blood_pressure <= 0.65
+|   |   |   |   |   |   |   |   |--- BMI <= 0.70
+|   |   |   |   |   |   |   |   |   |--- heart_rate <= 0.32
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- heart_rate >  0.32
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- BMI >  0.70
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- blood_pressure >  0.65
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- heart_rate >  0.58
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |--- heart_rate >  0.60
+|   |   |   |   |--- activity_index <= 0.20
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- activity_index >  0.20
+|   |   |   |   |   |--- blood_pressure <= 0.32
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- blood_pressure >  0.32
+|   |   |   |   |   |   |--- class: 1
+|   |--- encoded_smokes >  0.50
+|   |   |--- sleep_hours <= 0.67
+|   |   |   |--- activity_index <= 0.41
+|   |   |   |   |--- heart_rate <= 0.75
+|   |   |   |   |   |--- blood_pressure <= 0.23
+|   |   |   |   |   |   |--- sleep_hours <= 0.49
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- sleep_hours >  0.49
+|   |   |   |   |   |   |   |--- age <= 0.55
+|   |   |   |   |   |   |   |   |--- activity_index <= 0.15
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- activity_index >  0.15
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- age >  0.55
+|   |   |   |   |   |   |   |   |--- age <= 0.75
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- age >  0.75
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- blood_pressure >  0.23
+|   |   |   |   |   |   |--- nutrition_quality <= 0.71
+|   |   |   |   |   |   |   |--- activity_index <= 0.38
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- activity_index >  0.38
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- nutrition_quality >  0.71
+|   |   |   |   |   |   |   |--- blood_pressure <= 0.61
+|   |   |   |   |   |   |   |   |--- sleep_hours <= 0.49
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- sleep_hours >  0.49
+|   |   |   |   |   |   |   |   |   |--- sleep_hours <= 0.54
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- sleep_hours >  0.54
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- blood_pressure >  0.61
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- heart_rate >  0.75
+|   |   |   |   |   |--- BMI <= 0.46
+|   |   |   |   |   |   |--- encoded_gender <= 0.50
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- encoded_gender >  0.50
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- BMI >  0.46
+|   |   |   |   |   |   |--- sleep_hours <= 0.40
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- sleep_hours >  0.40
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |--- activity_index >  0.41
+|   |   |   |   |--- sleep_hours <= 0.48
+|   |   |   |   |   |--- nutrition_quality <= 0.73
+|   |   |   |   |   |   |--- blood_pressure <= 0.39
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- blood_pressure >  0.39
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- nutrition_quality >  0.73
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- sleep_hours >  0.48
+|   |   |   |   |   |--- class: 1
+|   |   |--- sleep_hours >  0.67
+|   |   |   |--- nutrition_quality <= 0.45
+|   |   |   |   |--- activity_index <= 0.08
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- activity_index >  0.08
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- nutrition_quality >  0.45
+|   |   |   |   |--- BMI <= 0.43
+|   |   |   |   |   |--- age <= 0.80
+|   |   |   |   |   |   |--- BMI <= 0.23
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- BMI >  0.23
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- age >  0.80
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- BMI >  0.43
+|   |   |   |   |   |--- sleep_hours <= 0.85
+|   |   |   |   |   |   |--- heart_rate <= 0.41
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- heart_rate >  0.41
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- sleep_hours >  0.85
+|   |   |   |   |   |   |--- class: 1
+|--- activity_index >  0.43
+|   |--- encoded_smokes <= 0.50
+|   |   |--- age <= 0.68
+|   |   |   |--- nutrition_quality <= 0.42
+|   |   |   |   |--- activity_index <= 0.86
+|   |   |   |   |   |--- BMI <= 0.20
+|   |   |   |   |   |   |--- BMI <= 0.13
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- BMI >  0.13
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- BMI >  0.20
+|   |   |   |   |   |   |--- BMI <= 0.46
+|   |   |   |   |   |   |   |--- sleep_hours <= 0.20
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- sleep_hours >  0.20
+|   |   |   |   |   |   |   |   |--- heart_rate <= 0.17
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- heart_rate >  0.17
+|   |   |   |   |   |   |   |   |   |--- nutrition_quality <= 0.39
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- nutrition_quality >  0.39
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- BMI >  0.46
+|   |   |   |   |   |   |   |--- heart_rate <= 0.56
+|   |   |   |   |   |   |   |   |--- activity_index <= 0.79
+|   |   |   |   |   |   |   |   |   |--- sleep_hours <= 0.27
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- sleep_hours >  0.27
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- activity_index >  0.79
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- heart_rate >  0.56
+|   |   |   |   |   |   |   |   |--- blood_pressure <= 0.42
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- blood_pressure >  0.42
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- activity_index >  0.86
+|   |   |   |   |   |--- blood_pressure <= 0.16
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- blood_pressure >  0.16
+|   |   |   |   |   |   |--- blood_pressure <= 0.48
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- blood_pressure >  0.48
+|   |   |   |   |   |   |   |--- heart_rate <= 0.49
+|   |   |   |   |   |   |   |   |--- BMI <= 0.43
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- BMI >  0.43
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- heart_rate >  0.49
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |--- nutrition_quality >  0.42
+|   |   |   |   |--- BMI <= 0.63
+|   |   |   |   |   |--- blood_pressure <= 0.51
+|   |   |   |   |   |   |--- heart_rate <= 0.18
+|   |   |   |   |   |   |   |--- nutrition_quality <= 0.66
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- nutrition_quality >  0.66
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- heart_rate >  0.18
+|   |   |   |   |   |   |   |--- sleep_hours <= 0.77
+|   |   |   |   |   |   |   |   |--- blood_pressure <= 0.02
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- blood_pressure >  0.02
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- sleep_hours >  0.77
+|   |   |   |   |   |   |   |   |--- blood_pressure <= 0.30
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- blood_pressure >  0.30
+|   |   |   |   |   |   |   |   |   |--- blood_pressure <= 0.41
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- blood_pressure >  0.41
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- blood_pressure >  0.51
+|   |   |   |   |   |   |--- BMI <= 0.21
+|   |   |   |   |   |   |   |--- blood_pressure <= 0.61
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- blood_pressure >  0.61
+|   |   |   |   |   |   |   |   |--- heart_rate <= 0.31
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- heart_rate >  0.31
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- BMI >  0.21
+|   |   |   |   |   |   |   |--- activity_index <= 0.56
+|   |   |   |   |   |   |   |   |--- nutrition_quality <= 0.71
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- nutrition_quality >  0.71
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- activity_index >  0.56
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- BMI >  0.63
+|   |   |   |   |   |--- activity_index <= 0.64
+|   |   |   |   |   |   |--- nutrition_quality <= 0.64
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- nutrition_quality >  0.64
+|   |   |   |   |   |   |   |--- activity_index <= 0.58
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- activity_index >  0.58
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- activity_index >  0.64
+|   |   |   |   |   |   |--- blood_pressure <= 0.30
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- blood_pressure >  0.30
+|   |   |   |   |   |   |   |--- age <= 0.30
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- age >  0.30
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |--- age >  0.68
+|   |   |   |--- nutrition_quality <= 0.83
+|   |   |   |   |--- activity_index <= 0.56
+|   |   |   |   |   |--- sleep_hours <= 0.35
+|   |   |   |   |   |   |--- heart_rate <= 0.34
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- heart_rate >  0.34
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- sleep_hours >  0.35
+|   |   |   |   |   |   |--- blood_pressure <= 0.56
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- blood_pressure >  0.56
+|   |   |   |   |   |   |   |--- age <= 0.83
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- age >  0.83
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- activity_index >  0.56
+|   |   |   |   |   |--- nutrition_quality <= 0.21
+|   |   |   |   |   |   |--- heart_rate <= 0.42
+|   |   |   |   |   |   |   |--- heart_rate <= 0.30
+|   |   |   |   |   |   |   |   |--- sleep_hours <= 0.58
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- sleep_hours >  0.58
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- heart_rate >  0.30
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- heart_rate >  0.42
+|   |   |   |   |   |   |   |--- sleep_hours <= 0.43
+|   |   |   |   |   |   |   |   |--- sleep_hours <= 0.32
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- sleep_hours >  0.32
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- sleep_hours >  0.43
+|   |   |   |   |   |   |   |   |--- heart_rate <= 0.65
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- heart_rate >  0.65
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- nutrition_quality >  0.21
+|   |   |   |   |   |   |--- sleep_hours <= 0.16
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- sleep_hours >  0.16
+|   |   |   |   |   |   |   |--- activity_index <= 0.79
+|   |   |   |   |   |   |   |   |--- activity_index <= 0.63
+|   |   |   |   |   |   |   |   |   |--- BMI <= 0.46
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- BMI >  0.46
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- activity_index >  0.63
+|   |   |   |   |   |   |   |   |   |--- nutrition_quality <= 0.71
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- nutrition_quality >  0.71
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- activity_index >  0.79
+|   |   |   |   |   |   |   |   |--- heart_rate <= 0.63
+|   |   |   |   |   |   |   |   |   |--- age <= 0.88
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- age >  0.88
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- heart_rate >  0.63
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |--- nutrition_quality >  0.83
+|   |   |   |   |--- BMI <= 0.67
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- BMI >  0.67
+|   |   |   |   |   |--- class: 1
+|   |--- encoded_smokes >  0.50
+|   |   |--- nutrition_quality <= 0.80
+|   |   |   |--- age <= 0.66
+|   |   |   |   |--- BMI <= 0.59
+|   |   |   |   |   |--- BMI <= 0.20
+|   |   |   |   |   |   |--- activity_index <= 0.49
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- activity_index >  0.49
+|   |   |   |   |   |   |   |--- blood_pressure <= 0.59
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- blood_pressure >  0.59
+|   |   |   |   |   |   |   |   |--- blood_pressure <= 0.67
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- blood_pressure >  0.67
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- BMI >  0.20
+|   |   |   |   |   |   |--- age <= 0.32
+|   |   |   |   |   |   |   |--- BMI <= 0.39
+|   |   |   |   |   |   |   |   |--- blood_pressure <= 0.27
+|   |   |   |   |   |   |   |   |   |--- activity_index <= 0.61
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- activity_index >  0.61
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- blood_pressure >  0.27
+|   |   |   |   |   |   |   |   |   |--- BMI <= 0.36
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- BMI >  0.36
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- BMI >  0.39
+|   |   |   |   |   |   |   |   |--- heart_rate <= 0.54
+|   |   |   |   |   |   |   |   |   |--- nutrition_quality <= 0.66
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- nutrition_quality >  0.66
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- heart_rate >  0.54
+|   |   |   |   |   |   |   |   |   |--- heart_rate <= 0.65
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- heart_rate >  0.65
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- age >  0.32
+|   |   |   |   |   |   |   |--- nutrition_quality <= 0.57
+|   |   |   |   |   |   |   |   |--- activity_index <= 0.56
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- activity_index >  0.56
+|   |   |   |   |   |   |   |   |   |--- heart_rate <= 0.19
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- heart_rate >  0.19
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- nutrition_quality >  0.57
+|   |   |   |   |   |   |   |   |--- activity_index <= 0.74
+|   |   |   |   |   |   |   |   |   |--- activity_index <= 0.69
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- activity_index >  0.69
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- activity_index >  0.74
+|   |   |   |   |   |   |   |   |   |--- nutrition_quality <= 0.69
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- nutrition_quality >  0.69
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- BMI >  0.59
+|   |   |   |   |   |--- age <= 0.12
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- age >  0.12
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |--- age >  0.66
+|   |   |   |   |--- sleep_hours <= 0.63
+|   |   |   |   |   |--- blood_pressure <= 0.54
+|   |   |   |   |   |   |--- encoded_gender <= 0.50
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- encoded_gender >  0.50
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- blood_pressure >  0.54
+|   |   |   |   |   |   |--- blood_pressure <= 0.62
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- blood_pressure >  0.62
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- sleep_hours >  0.63
+|   |   |   |   |   |--- heart_rate <= 0.33
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- heart_rate >  0.33
+|   |   |   |   |   |   |--- encoded_gender <= 0.50
+|   |   |   |   |   |   |   |--- blood_pressure <= 0.27
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- blood_pressure >  0.27
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- encoded_gender >  0.50
+|   |   |   |   |   |   |   |--- sleep_hours <= 0.67
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- sleep_hours >  0.67
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |--- nutrition_quality >  0.80
+|   |   |   |--- activity_index <= 0.76
+|   |   |   |   |--- activity_index <= 0.67
+|   |   |   |   |   |--- age <= 0.43
+|   |   |   |   |   |   |--- nutrition_quality <= 0.92
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- nutrition_quality >  0.92
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- age >  0.43
+|   |   |   |   |   |   |--- blood_pressure <= 0.38
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- blood_pressure >  0.38
+|   |   |   |   |   |   |   |--- activity_index <= 0.57
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- activity_index >  0.57
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- activity_index >  0.67
+|   |   |   |   |   |--- sleep_hours <= 0.63
+|   |   |   |   |   |   |--- sleep_hours <= 0.43
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- sleep_hours >  0.43
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- sleep_hours >  0.63
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |--- activity_index >  0.76
+|   |   |   |   |--- heart_rate <= 0.25
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- heart_rate >  0.25
+|   |   |   |   |   |--- nutrition_quality <= 0.82
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- nutrition_quality >  0.82
+|   |   |   |   |   |   |--- blood_pressure <= 0.71
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- blood_pressure >  0.71
+|   |   |   |   |   |   |   |--- class: 1
